@@ -1,6 +1,6 @@
 <script>
-import AppHead from "./components/Apphead.vue";
-import AppMain from "./components/AppMain.vue";
+import AppHead from "./components/AppHead.vue";
+import AppMain from "./components/appMain.vue";
 import AppFoot from "./components/AppFoot.vue";
 import AppSticky from "./components/AppSticky.vue";
 
@@ -23,18 +23,22 @@ export default {
 }
 </script>
 <template>
-  <header>
-    <AppHead />
-  </header>
-  <main>
-    <AppMain />
-  </main>
-  <footer>
-    <AppFoot />
-  </footer>
-  <sticky-bar>
-    <AppSticky />
-  </sticky-bar>
+  <body>
+
+
+    <header>
+      <AppHead />
+    </header>
+    <main>
+      <AppMain />
+    </main>
+    <footer>
+      <AppFoot />
+    </footer>
+    <sticky-bar>
+      <AppSticky />
+    </sticky-bar>
+  </body>
 </template>
 <style lang="scss">
 @use "../src/assets/styles/general.scss"
