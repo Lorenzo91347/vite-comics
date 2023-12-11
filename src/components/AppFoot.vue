@@ -71,15 +71,18 @@ export default {
     </div>
      
     </div>
+    
     <img src="../assets/imgs/dc-logo-bg.png" alt="">
-</div></template>
+    
+</div>
+</template>
 <style scoped lang="scss">
 .foot-background {
     background-image: url(../assets/imgs/footer-bg.jpg);
     height: 370px;
     display: flex;
     justify-content: space-around;
-    overflow: visible;
+    align-items: center;
     div{
         
         
@@ -89,8 +92,7 @@ export default {
         display: flex;
         flex-direction: column;
       }
-      div{
-      }
+     
         
     }
     ul{
@@ -105,9 +107,15 @@ export default {
             }
         }
     }
-    img{
+    
+      
+        img{
        
-       width: 400px;
-    }
+            width: 430px;
+            height: 430px;
+            object-fit: cover;
+            clip-path: inset(30px 0 );
+        }
+    
 }
 </style>
