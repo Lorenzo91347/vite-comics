@@ -91,6 +91,7 @@ export default {
         :thumb="comic.thumb"
         :series="comic.series"/>
         </div>
+        <div class="load">LOAD MORE</div>
     </div>
 </template>
 <style lang="scss" scoped>
@@ -107,6 +108,13 @@ export default {
     display: flex;
     flex-wrap: wrap;
    
+    }
+    .load{
+        background-color: #0282f9;
+        padding: 10px;
+        width: 185px;
+        text-align: center;
+        margin: auto;
     }
 
   
