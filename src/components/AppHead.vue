@@ -1,72 +1,29 @@
 <script>
-export default {
-    data() {
-        return {
-            toplist: [
-                'characters',
-                'comics',
-                'movies',
-                'tv',
-                'games',
-                'collectibles',
-                'videos',
-                'fans',
-                'news',
-                'shop'
+export default{}
 
-
-            ]
-        }
-    }
-}
 </script>
 <template>
-    <div class="header-container">
-        <img src="../assets/imgs/dc-logo.png" alt="DC Logo Small">
-        <ul>
-            <li v-for="item in toplist"><a href="">
-                    {{ item.toUpperCase() }}
-                </a></li>
-        </ul>
+    <div class="background">
+        <div>CURRENT SERIES</div>
     </div>
 </template>
-<style scoped lang="scss">
-$merch_color: #0282f9;
+<style lang="scss" scoped>
+.background{
+    background-image: url(../assets/imgs/jumbotron.jpg);
+    height: 400px;
+    position: relative;
+    div{
+        background-color: #0282f9;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        width: 230px;
+        font-size: 26px;
+        position: absolute;
+        bottom: -20px;
+        left: 120px;
 
-.header-container {
-    height: 120px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    img {
-        height: 80px;
-    }
-
-    ul {
-        display: flex;
-        gap: 10px;
-        list-style: none;
-        align-items: center;
-
-        li {
-            border-bottom: 5px black;
-
-            a {
-                font-size: 12px;
-                text-decoration: none;
-                color: black;
-
-                &:hover {
-                    padding-bottom: 47px;
-                    color: #0282f9;
-                    border-bottom: 5px solid;
-                }
-            }
-
-        }
 
     }
-
 }
 </style>

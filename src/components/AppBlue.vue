@@ -5,23 +5,23 @@ export default{
             blueList:[
                
                 {
-                    image:"../assets/imgs/buy-comics-digital-comics.png",
+                    image:"../src/assets/imgs/buy-comics-digital-comics.png",
                     link:"digital comics"
                 },
                 {
-                    image:"../assets/imgs/buy-comics-merchandise.png",
+                    image:"../src/assets/imgs/buy-comics-merchandise.png",
                     link:"dc merchandise"
                 },
                 {
-                    image:"../assets/imgs/buy-comics-subscriptions.png",
+                    image:"../src/assets/imgs/buy-comics-subscriptions.png",
                     link:"subscription"
                 },
                 {
-                    image:"../assets/imgs/buy-comics-shop-locator.png",
+                    image:"../src/assets/imgs/buy-comics-shop-locator.png",
                     link:"comic shop locator"
                 },
                 {
-                    image:"../assets/imgs/buy-dc-power-visa.svg",
+                    image:"../src/assets/imgs/buy-dc-power-visa.svg",
                     link:"dc power visa"
                 }
             ]
@@ -33,7 +33,7 @@ export default{
 <div class="blue">
 <ul>
     <li v-for="item in blueList">
-    <img src="" alt="item.link">
+    <img :src="item.image" alt="item.link">
     <a href="">{{ item.link.toUpperCase() }}</a></li>
 </ul>
 </div>
@@ -50,11 +50,25 @@ export default{
         display: flex;
         align-items: center;
         justify-content: space-around;
-        li{
+        list-style: none;
+        gap: 10px;
+
+        li{ display: flex;
+            align-items: center;
+            gap: 10px;
+            img{
+                width: 37px;
+            }
             a{
                 text-decoration: none;
                 color: white;
             }
+        }
+        li:nth-child(4) img{
+            width: 27px;
+        }
+        li:first-child img{
+            width: 30px;
         }
     }
 }
